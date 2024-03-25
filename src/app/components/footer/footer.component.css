@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+h1 {
+  text-align: justify;
+  font-weight: bold;
+}
+h3 {
+  text-align: center;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+nav .container-fluid {
+  display: flex;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 40px;
+  border-color: gainsboro !important;
+  margin-left: 70px;
+  margin-right: 70px;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-nav {
+  justify-content: center;
+  align-items: center;
+}
+#navbarNavAltMarkup {
+  padding-right: 0;
+}
+.navbar-brand {
+  padding: 0% !important;
+}
+button {
+  color: #2b2d42 !important;
+  background-color: #41ead4 !important;
+  border-radius: 20px !important;
+}
+.button-header {
+  text-align: end;
+  position: absolute; /* Thiết lập vị trí tuyệt đối cho button */
+  top: 0; /* Đưa button lên trên cùng của hàng */
+  right: 70px; /* Căn lề phải của button về phía bên phải */
+  margin-top: 10px; /* Khoảng cách giữa button và phần tử trên cùng của hàng */
+}
+.button-header button {
+  background-color: red !important;
+  color: white !important;
+}
+.content-header {
+  padding-right: 0;
+}
+footer {
+  color: aliceblue !important;
+  background-color: #2b2d42;
+  height: auto;
+  text-align: center;
+  padding-top: 80px;
+}
+section {
+  margin-bottom: 50px;
+}
+ul li {
+  list-style: none;
+}
+.container-fluid {
+  margin-bottom: 30px !important;
+}
+.khung-anh {
+  overflow: hidden; /* Đảm bảo hình ảnh không bị tràn ra ngoài khung */
+  display: flex; /* Sử dụng flexbox */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.khung-anh img {
+  max-width: 100%; /* Hình ảnh sẽ co dãn tự động theo kích thước của khung */
+  height: auto; /* Giữ cho tỉ lệ của hình ảnh không bị biến dạng */
+  margin-bottom: 30px;
+}
+p {
+  background-color: #2b2d42;
+  color: #fefefe;
+  display: inline-block;
+  margin-left: 20px;
+}
+.gach-chan {
+  text-decoration: underline red;
+}
+.anh-bia {
+  overflow: hidden;
+}
+
+.anh-bia .anh-vien {
+  width: 100%;
+  height: auto;
+}
+
+.noi-dung-bia {
+  position: absolute;
+  top: 35%; /* Đặt nội dung ở giữa phía trên của ảnh bìa */
+  left: 35%; /* Đặt nội dung ở giữa phía trái của ảnh bìa */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Di chuyển nội dung lên trên và sang trái để nằm ở giữa */
+  text-align: center; /* Căn giữa nội dung */
+}
+.khung-anh-2 {
+  overflow: hidden; /* Đảm bảo hình ảnh không bị tràn ra ngoài khung */
+}
+
+/* Media query để kiểm tra kích thước của khung so với kích thước của màn hình */
+@media only screen and (max-width: 1000px) {
+  .khung-anh-2 img {
+    display: none; /* Ẩn ảnh nếu kích thước của khung nhỏ hơn hoặc bằng kích thước của màn hình */
+  }
+  #Testiomni {
+    order: -1;
+  }
+  .slideshow {
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng của phần tử chứa nó */
+    overflow: hidden !important; /* Ẩn phần dư thừa của ảnh nếu nó vượt quá chiều rộng của phần tử chứa */
+  }
+  .next-button {
+    margin-right: 20px;
+    height: 0px;
+  }
+}
